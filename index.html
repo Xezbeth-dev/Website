@@ -4,17 +4,53 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Xezbeth | Home</title>
-    <script src="script.js"></script>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<!-- header -->
-	<t-header></t-header>
-	<t-section
-	heading="About"
-	details="Hey! I'm Xezbeth, a minecraft streamer and game developer.
-	This website is under construction so please come back later!"></t-section>
-	<t-links></t-links>
+	<header>
+        <h1>XEZBETH</h1>
+        <nav>
+		    <button onclick="toggle()">Theme</button>
+        </nav>
+    </header>
+
+	<section>
+        <div class="card1">
+            <h2>About</h2>
+            <p>Hey! I am Xezbeth, a Minecraft streamer and game developer!</p>
+        </div>
+    </section>
+
+	<section>
+		<div class="card1">
+			<h2>Projects</h2>
+			<div class="flex">
+				<div class="card2 center">
+					<h2>Misson Bee V2</h2>
+					<a href="#" class="btn2">Play on Itch.io</a>
+				</div>
+				<div class="card2 center">
+					<h2>Dredd</h2>
+					<a href="#" class="btn2">Play on Itch.io</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+        <div class="card1">
+            <h2>Links</h2>
+            <div class="flex">
+                <a href="https://www.twitch.tv/x3zbeth" class="btn">Twitch</a>
+                <a href="#" class="btn hidden">YouTube</a>
+                <a href="https://x3zbeth.itch.io/" class="btn">Itch</a>
+                <a href="https://github.com/Xezbeth-dev" class="btn">GitHub</a>
+                <a href="mailto:xezbeth@xezbeth.com" class="btn">Contact</a>
+            </div>
+        </div>
+	</section>
+
 	<script>
 		function toggle() {
 			document.body.classList.toggle("light");

@@ -31,6 +31,8 @@ body.light {
     --bg-light: hsl(0 0% 100%);
     --text: hsl(0 0% 5%);
     --text-muted: hsl(0 0% 30%);
+    --accent1: hsl(180 100% 50%);
+    --accent2: hsl(300 100% 50%);
 }
 
 /* Global Styles*/
@@ -47,10 +49,12 @@ body {
 
 h1 {
     font: var(--h1);
+    color: var(--accent2);
 }
 
 h2 {
     font: var(--h2);
+    color: var(--text);
     margin: var(--spacing2) 0;
 }
 
@@ -63,12 +67,8 @@ a {
     text-decoration: underline;
 }
 
-a:hover {
-    color: var(--accent1);
-    text-decoration: underline;
-}
-
 .btn,
+.btn2,
 button {
     all: unset;
     display: inline-block;
@@ -82,7 +82,12 @@ button {
     cursor: pointer;
 }
 
+.btn2 {
+    border: solid var(--spacing1) var(--accent2);
+}
+
 .btn:hover,
+.btn2:hover,
 button:hover {
     border: solid var(--spacing1) var(--accent1);
     transition: 0.3s ease-in-out;
@@ -112,19 +117,22 @@ section {
     flex-wrap: wrap;
 }
 
-.flex > * {
-    flex: 1;
-    min-width: 400px;
-}
-
 .reverse {
     flex-direction: row-reverse;
 }
 
-div {
+div.card1 {
     background: var(--bg);
-    padding: 1.5rem;
-    border-radius: 1rem;
+    padding: var(--spacing5);
+    border-radius: var(--spacing4);
+}
+
+div.card2 {
+    background: var(--bg-light);
+    padding: var(--spacing5);
+    border-radius: var(--spacing4);
+    min-width: 260px;
+    min-height: 160px;
 }
 
 /* Header */
