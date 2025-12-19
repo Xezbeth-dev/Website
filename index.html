@@ -3,14 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Xezbeth | Home</title>
+    <script src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<p>
-	Hey! I am Xezbeth a Minecraft streamer and game developer!
-	This website is very much in progress, so please come back later!
-	Enjoy stream!
-	</p>
-	<p>Stream: <a href="https://www.twitch.tv/x3zbeth">X3zbeth on Twitch!</a></p>
+	<!-- header -->
+	<t-header></t-header>
+	<t-section
+	heading="About"
+	details="Hey! I'm Xezbeth, a minecraft streamer and game developer.
+	This website is under construction so please come back later!"></t-section>
+	<t-links></t-links>
+	<script>
+		function toggle() {
+			document.body.classList.toggle("light");
+		}
+	</script>
 </body>
 </html>

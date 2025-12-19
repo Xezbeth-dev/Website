@@ -1,0 +1,140 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-dark: hsl(0 0% 0%);
+    --bg: hsl(0 0% 5%);
+    --bg-light: hsl(0 0% 10%);
+    --text: hsl(0 0% 95%);
+    --text-muted: hsl(0 0% 70%);
+    --accent1: hsl(300 100% 50%);
+    --accent2: hsl(180 100% 50%);
+    --ff: "Noto Sans JP", serif;
+    --ff2: "Fira Sans", serif;
+    --p: 1rem/1.5em var(--ff);
+    --h1: 600 3rem/1.2em var(--ff2);
+    --h2: 600 2rem/1.2em var(--ff2);
+    --spacing1: 0.2rem;
+    --spacing2: 0.5rem;
+    --spacing3: 0.7rem;
+    --spacing4: 1rem;
+    --spacing5: 1.5rem;
+}
+
+body.light {
+    --bg-dark: hsl(0 0% 90%);
+    --bg: hsl(0 0% 95%);
+    --bg-light: hsl(0 0% 100%);
+    --text: hsl(0 0% 5%);
+    --text-muted: hsl(0 0% 30%);
+}
+
+/* Global Styles*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    text-wrap: balance;
+    font: var(--p);
+    background: var(--bg-dark);
+    color: var(--text-muted);
+}
+
+h1 {
+    font: var(--h1);
+}
+
+h2 {
+    font: var(--h2);
+    margin: var(--spacing2) 0;
+}
+
+p {
+    margin: var(--spacing2) 0;
+}
+
+a {
+    color: var(--text);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: var(--accent1);
+    text-decoration: underline;
+}
+
+.btn,
+button {
+    all: unset;
+    display: inline-block;
+    margin: var(--spacing4) 0;
+    background: var(--bg-light);
+    padding: var(--spacing3);
+    color: var(--text);
+    border-radius: var(--spacing3);
+    border: solid var(--spacing1) var(--bg-light);
+    font: var(--p);
+    cursor: pointer;
+}
+
+.btn:hover,
+button:hover {
+    border: solid var(--spacing1) var(--accent1);
+    transition: 0.3s ease-in-out;
+}
+
+/* Utility */
+section {
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: var(--spacing4) 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing4);
+    flex-wrap: wrap;
+}
+
+.flex > * {
+    flex: 1;
+    min-width: 400px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+div {
+    background: var(--bg);
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+/* Header */
+header {
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: var(--spacing4) 0;
+}
